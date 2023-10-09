@@ -1,0 +1,7 @@
+a=int(input("Enter A value"))
+b=int(input("Enter B value"))
+t=a
+a=b
+b=t
+print("the value a is",a)
+print("the value b is",b)
