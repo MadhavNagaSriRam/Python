@@ -1,0 +1,21 @@
+sno=int(input("enter sno"))
+sname=(input("enter sname"))
+group=(input("enter group"))
+s1=int(input("enter s1"))
+s2=int(input("enter s2"))
+s3=int(input("enter s3"))
+print(sno)
+tot=s1+s2+s3
+avg=tot/3
+if(avg>=90):
+    print("O")
+if(avg>=80 and avg<90):
+    print("A")
+if(avg>=70 and avg<80):
+    print("B")
+if(avg>=60 and avg<70):
+    print("C")
+if(avg>=50 and avg<60):
+    print("D")
+if(avg>=40 and avg<50)
+    print("pass")
