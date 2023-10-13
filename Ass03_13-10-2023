@@ -1,0 +1,10 @@
+no=int(input("enter number"))
+if(no%2!=0):
+    print("wired")
+else:
+        if(no>1 and no<6):
+            print("not wired")
+        if(no>5 and no<20):
+            print("wired")
+        if(no>19):
+            print("not wired")
