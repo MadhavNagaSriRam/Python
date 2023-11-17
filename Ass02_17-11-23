@@ -1,0 +1,14 @@
+n=int(input())
+nl=[]
+l=[]
+for i in range(0,n):
+    x=int(input())
+    l.append(x)
+nl=sorted(l)
+k=int(input())
+i=n-1
+for j in range(1,k+1):
+    while(n!=0):
+        print(nl[i])
+        break
+    i=i-1
