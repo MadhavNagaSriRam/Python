@@ -1,0 +1,9 @@
+n=int(input())
+nl=[]
+l=[]
+for i in range(0,n):
+    x=int(input())
+    l.append(x)
+nl=sorted(l)
+print(nl[n-1],end=" ")
+print(nl[0])
