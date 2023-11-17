@@ -1,0 +1,7 @@
+n=int(input())
+l = list(map(int, input().split()))
+nl=sorted(l)
+if(nl[n-1]==nl[n-2]):
+    print(nl[n-3])
+elif(nl[n-1]!=nl[n-2]):
+    print(nl[n-2])
