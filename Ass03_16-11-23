@@ -1,0 +1,10 @@
+n=int(input())
+l=[]
+t=0
+s=0
+for i in range(0,n):
+    x=int(input())
+    l.append(x)
+    s=s+l[x]
+t=n*(n+1)/2
+print(t-s)
