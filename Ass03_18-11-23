@@ -1,0 +1,6 @@
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+nl=[]
+l.extend(m)
+nl=sorted(l)
+print(nl[0])
