@@ -1,0 +1,9 @@
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+n=len(l)
+nl=[]
+for i in range(0,n):
+    x=l[i]+m[i]
+    nl.append(x)
+sorted(nl)
+print(nl[0])
