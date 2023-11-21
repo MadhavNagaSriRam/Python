@@ -1,0 +1,8 @@
+l=list(map(int,input().split()))
+ol=[]
+for i in l:
+    if(i%2==1):
+        x=i
+        ol.append(x)
+l.extend(ol)
+print(l)
