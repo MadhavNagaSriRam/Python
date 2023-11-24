@@ -1,0 +1,63 @@
+def total():
+    s1=int(sem1cgpa.get())
+    s2=int(sem2cgpa.get())
+    s3=int(sem3cgpa.get())
+    s4=int(sem4cgpa.get())
+    s5=int(sem5cgpa.get())
+    s6=int(sem6cgpa.get())
+    total=s1+s2+s3+s4+s5+s6
+    avg=total/6
+    int(avg)
+    if(avg==10):
+        grade="O"
+    elif(avg==9):
+        grade="A+"
+    elif(avg==8):
+        grade="A"
+    elif(avg==7):
+        grade="B+"
+    elif(avg==6):
+        grade="B"
+    elif(avg==5):
+        grade="C"
+    elif(avg==4):
+        grade="D"
+    else:
+        grade="F"
+    res.config(text=grade)
+    
+from tkinter import*
+result=Tk()
+result.title("Degree Results")
+
+sem1=Label(result,text="Enter Sem1 CGPA:")
+sem1cgpa=Entry(result)
+sem2=Label(result,text="Enter Sem2 CGPA:")
+sem2cgpa=Entry(result)
+sem3=Label(result,text="Enter Sem3 CGPA:")
+sem3cgpa=Entry(result)
+sem4=Label(result,text="Enter Sem4 CGPA:")
+sem4cgpa=Entry(result)
+sem5=Label(result,text="Enter Sem5 CGPA:")
+sem5cgpa=Entry(result)
+sem6=Label(result,text="Enter Sem6 CGPA:")
+sem6cgpa=Entry(result)
+x=Button(result,text="Submit",command=total)
+res=Label(result,text="Ans?")
+
+sem1.grid(row=0,column=0)
+sem1cgpa.grid(row=0,column=1)
+sem2.grid(row=1,column=0)
+sem2cgpa.grid(row=1,column=1)
+sem3.grid(row=2,column=0)
+sem3cgpa.grid(row=2,column=1)
+sem4.grid(row=3,column=0)
+sem4cgpa.grid(row=3,column=1)
+sem5.grid(row=4,column=0)
+sem5cgpa.grid(row=4,column=1)
+sem6.grid(row=5,column=0)
+sem6cgpa.grid(row=5,column=1)
+x.grid(row=6,column=0)
+res.grid(row=6,column=1)
+
+result.mainloop()
