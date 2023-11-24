@@ -1,0 +1,26 @@
+def sub():
+    x=int(n1.get())
+    y=int(n2.get())
+    z=x-y
+    res.config(text=z)
+from tkinter import *
+subtraction=Tk()
+subtraction.title("Subtract 2 no's")
+a=Label(subtraction,text="Enter First Number")
+n1=Entry(subtraction)
+b=Label(subtraction,text="Enter Second Number")
+n2=Entry(subtraction)
+c=Button(subtraction,text="Sub",command=sub)
+res=Label(subtraction,text="Result:")
+
+a.grid(row=0,column=0)
+n1.grid(row=0,column=1)
+
+
+b.grid(row=1,column=0)
+n2.grid(row=1,column=1)
+
+c.grid(row=2,column=0)
+res.grid(row=2,column=1)
+
+subtraction.mainloop()
