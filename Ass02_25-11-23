@@ -1,0 +1,18 @@
+n=int(input())
+a=[]
+nl=[]
+newl=[]
+newl1=[]
+for i in range(0,n):
+    l=list(map(int,input().split()))
+    a.append(l)
+for i in range(0,n):
+    for j in range(0,n):
+        nl=a[j][i]
+        sorted(nl)
+        newl.append(nl)
+for i in range(0,n):
+    for j in range(0,n):
+        max=newl[i][j]
+        newl1.append(max)
+print(newl1)
