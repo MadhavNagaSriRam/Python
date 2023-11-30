@@ -1,0 +1,11 @@
+n=input()
+if(n.endswith=='.jpeg'):
+    print("photo document")
+elif(n.endswith=='.doc'):
+    print("word document")
+elif(n.endswith=='.xls'):
+    print("excel document")
+elif(n.endswith=='.ppt'):
+    print("powerpoit document")
+else:
+    print("invalid")
